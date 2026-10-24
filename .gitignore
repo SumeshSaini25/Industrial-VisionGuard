@@ -1,0 +1,66 @@
+
+# ==========================================
+# Industrial VisionGuard - Git Ignore
+# ==========================================
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# IDE and operating system files
+.DS_Store
+.idea/
+.vscode/
+
+# Dataset files
+data/
+*.zip
+*.tar
+*.tar.gz
+
+# Trained models and checkpoints
+results/
+models/
+*.ckpt
+*.pth
+*.pt
+*.onnx
+*.safetensors
+
+# Generated evaluation and inspection reports
+reports/
+
+# Local ChromaDB vector database
+rag/chroma_db/
+
+# Local embedding caches
+rag/embeddings/
+.cache/
+
+# Logs and temporary files
+*.log
+logs/
+tmp/
+temp/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Streamlit local configuration
+.streamlit/secrets.toml
